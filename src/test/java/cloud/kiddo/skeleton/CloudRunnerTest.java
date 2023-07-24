@@ -1,4 +1,4 @@
-package biz.turnonline.ecosystem.skeleton;
+package cloud.kiddo.skeleton;
 
 import io.micronaut.http.HttpRequest;
 import io.micronaut.http.MediaType;

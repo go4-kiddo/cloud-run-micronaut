@@ -1,4 +1,4 @@
-package biz.turnonline.ecosystem.skeleton;
+package cloud.kiddo.skeleton;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -17,8 +17,6 @@ import javax.annotation.Nonnull;
 import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 
-import static biz.turnonline.ecosystem.skeleton.Application.DATE_FORMAT_PATTERN;
-
 @Controller
 public class CloudRunner
 {
@@ -29,7 +27,7 @@ public class CloudRunner
     CloudRunner()
     {
         this.mapper = new ObjectMapper();
-        this.mapper.setDateFormat( new SimpleDateFormat( DATE_FORMAT_PATTERN ) );
+        this.mapper.setDateFormat( new SimpleDateFormat( Application.DATE_FORMAT_PATTERN ) );
         this.mapper.registerModule( new JavaTimeModule() );
         this.mapper.configure( DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false );
     }

@@ -8,7 +8,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>biz.turnonline.ecosystem</groupId>
+    <groupId>cloud.kiddo</groupId>
     <artifactId>cloud-run-micronaut</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>${packaging}</packaging>
@@ -16,14 +16,14 @@
     <description>Cloud Run service skeleton based on the Micronaut framework</description>
 
     <scm>
-        <connection>scm:git:[fetch=]git@github.com:turnonline/cloud-run-micronaut.git</connection>
-        <developerConnection>scm:git:[push=]git@github.com:turnonline/cloud-run-micronaut.git</developerConnection>
-        <url>https://github.com/turnonline/cloud-run-micronaut</url>
+        <connection>scm:git:[fetch=]git@github.com:go4-kiddo/cloud-run-micronaut.git</connection>
+        <developerConnection>scm:git:[push=]git@github.com:go4-kiddo/cloud-run-micronaut.git</developerConnection>
+        <url>https://github.com/go4-kiddo/cloud-run-micronaut</url>
         <tag>HEAD</tag>
     </scm>
 
     <issueManagement>
-        <url>https://github.com/turnonline/cloud-run-micronaut/issues</url>
+        <url>https://go4-kiddo.atlassian.net/jira</url>
     </issueManagement>
 
     <developers>
@@ -38,7 +38,7 @@
         <jdk.version>17</jdk.version>
         <release.version>17</release.version>
         <micronaut.version>4.0.0</micronaut.version>
-        <exec.mainClass>biz.turnonline.ecosystem.skeleton.Application</exec.mainClass>
+        <exec.mainClass>cloud.kiddo.skeleton.Application</exec.mainClass>
         <packaging>jar</packaging>
         <micronaut.runtime>netty</micronaut.runtime>
         <maven.native.plugin.version>0.9.23</maven.native.plugin.version>
@@ -175,7 +175,7 @@
                         </path>
                     </annotationProcessorPaths>
                     <compilerArgs>
-                        <arg>-Amicronaut.processing.group=biz.turnonline.ecosystem</arg>
+                        <arg>-Amicronaut.processing.group=cloud.kiddo</arg>
                         <arg>-Amicronaut.processing.module=cloud-run-micronaut</arg>
                     </compilerArgs>
                 </configuration>
